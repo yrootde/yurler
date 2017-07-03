@@ -1,0 +1,25 @@
+{% block banner %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+
+            <form class="" action="index.html" method="post">
+                <div class="col-lg-6">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <style>
+                .jumbotron-fluid {
+                    background-image: url(https://source.unsplash.com/random);
+                    background-size: cover;
+                }
+            </style>
+        </div>
+    </div>
+{% endblock %}

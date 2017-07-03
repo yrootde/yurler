@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'index/nav.html.twig' %}
+    {% include 'index/banner.html.twig' %}
+    {% include 'index/info.html.twig' %}
+    {% include 'index/footer.html.twig' %}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            margin-top: 56px;
+        }
+    </style>
+{% endblock %}
