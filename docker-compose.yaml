@@ -1,0 +1,25 @@
+version: '2'
+services:
+    web:
+        image: traskin/docker-symfony
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - db
+        links:
+            - db
+        ports:
+            - "8000:80"
+
+    db:
+        image: mariadb
+        environment:
+            MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+            MYSQL_DATABASE: 'symfony'
+        volumes:
+            - database:/var/lib/mysql
+        ports:
+            - "3306:3306"
+
+volumes:
+    database:
