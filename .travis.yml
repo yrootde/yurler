@@ -1,6 +1,6 @@
 language: php
 
-services: mariadb
+services: mysql
 
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS symfony;'
