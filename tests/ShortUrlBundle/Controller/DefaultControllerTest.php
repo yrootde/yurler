@@ -23,6 +23,8 @@ class DefaultControllerTest extends WebTestCase
         $shortUrl->setTargetUrl('https://google.de');
         $em->persist($shortUrl);
 
+        $em->flush();
+
         $crawler = $client->request('GET', '/abcde');
         $this->assertTrue($client->getResponse()->isRedirect('https://google.de'));
     }
