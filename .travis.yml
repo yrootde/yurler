@@ -20,8 +20,7 @@ script:
   - ./vendor/bin/phpunit --disallow-test-output --report-useless-tests --exclude-group=Coverage tests/
 
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover ./clover.xml
+ - php vendor/bin/coveralls -v
 
 notifications:
   slack:
