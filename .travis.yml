@@ -16,7 +16,7 @@ install:
   - php bin/console doctrine:schema:create
 
 script:
-  - ./vendor/bin/phpunit --disallow-test-output --report-useless-tests --coverage-clover ./clover.xml --group=Coverage tests/
+  - ./vendor/bin/phpunit --disallow-test-output --report-useless-tests --coverage-clover build/logs/clover.xml --group=Coverage tests/
   - ./vendor/bin/phpunit --disallow-test-output --report-useless-tests --exclude-group=Coverage tests/
 
 after_script:
