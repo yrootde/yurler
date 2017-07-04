@@ -12,7 +12,7 @@ install:
   - php bin/console doctrine:schema:create
   - composer require phpunit/phpunit
 script:
-  - cd tests/ && ../vendor/bin/phpunit --verbose --colors --no-globals-backup . 
+  - ./vendor/bin/phpunit --verbose --colors --no-globals-backup . 
 notifications:
   slack:
     secure:     Rx+eVjK3d3ODdIR9PjcWol7NdnjbNfKWBpwl2jBKaF8sIDmj/H5hdPNfW6tHoZop6PEjHoTzj+FWxqpVv8+Zx6hbDKsguzzViU38QZ4HruLXReHU7RfOa2TYWhtmJkJX4+ftCnbKopFazgd3LIPxO3Twho3oa41XJ19DSfuFtGEwSOmNhyFZ14WkKTQfXb1GYN6M2sTOOT8P6apss4IWOXI6OnF79PyEOHk8skNKgV0FcvoOBmE52vToeRpWWmtGbs8irOZYYWps6UofQmXitMTvTSrhVPRhgtU1dCvTKfaSQItnwUxCmeQU2faVljgR3cH0B9Sr/PM4e22Wd+5sqm5HwNK/kuffHRz7cJy3KYeyBgBPeShyK16V+DOSHmjamqcGXwUPcOmKA5r17QDvQu1gt/VCG2P6HbKGsx4YLo4MCz571bnt9myMbHvhZgL5sBagNQhgbwOJZQ6cTl+WbQpsM8sI6qVtjOmgA9rudvHGV1ViArZKwos4e1+d3gZmYy4cEmecvAZ3a+nXV9LoxI/AXrpImFsYVyH4FM889HfvKKurCBQApgWvkqCKzAu8KI830BIPtj+WRY5ZO1Z2mjc4uhAkUBDItWiTye2xvuXb8Ha78awAewLNEqoSqaIJnjU7BzMxgxbefEYoO0FaricMVfE4rbebRxXS2WaZCwc=
